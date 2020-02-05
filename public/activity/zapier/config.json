@@ -21,7 +21,7 @@
                 }							
 			],
             "outArguments": [],			
-			"url": "https://YOUR_URL/zapier/execute",
+			"url": "https://newtestsn/zapier/execute",
             "verb": "POST",
             "body": "",
             "header": "",
@@ -37,26 +37,26 @@
             "format": "JSON" 
         },             
         "save": {
-        	"url": "https://YOUR_URL/zapier/save/",
+        	"url": "https://newtestsn/zapier/save/",
             "body": "",
             "verb": "POST",
             "useJwt": false
         },
         "publish": {
-        	"url": "https://YOUR_URL/zapier/publish/",
+        	"url": "https://newtestsn/zapier/publish/",
             "verb": "POST",
             "body": "",
             "useJwt": false
         },
         "validate": {
-        	"url": "https://YOUR_URL/zapier/validate/",
+        	"url": "https://newtestsn/zapier/validate/",
             "verb": "POST",
             "body": "",
             "useJwt": false            
         }
     },
     "edit": {
-    	"url": "https://YOUR_URL/activity/zapier/",
+    	"url": "https://newtestsn/activity/zapier/",
         "height": 400,
         "width": 500
     }
