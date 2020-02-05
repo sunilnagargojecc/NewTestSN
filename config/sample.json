@@ -1,0 +1,10 @@
+{
+	"env": "development",
+	"etApp": {
+		"applicationId": "<Application ID from App Center>",
+		"appSignature":"<App Signuature from App Center>",
+		"clientId": "<Client ID from App Center>",
+		"clientSecret": "<Client Secret from APP Center>",
+		"stack": "<Stack of app ex. S6, S7>"
+	}
+}

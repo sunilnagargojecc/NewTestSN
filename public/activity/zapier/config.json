@@ -1,0 +1,63 @@
+{
+    "workflowApiVersion": "1.0",
+    "metaData": {
+        "version": "2.0",
+        "icon": "images/icon.jpg",
+        "iconSmall": "images/icon-small.jpg"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "Zapier",
+            "description": "Send the data of your Journey's event to a Zapier Zap."
+        }
+    },
+    "arguments": {
+        "execute": {       
+			"inArguments":[
+                {
+                    "contactKey": "{{Contact.Key}}",
+                    "email": "{{Contact.Default.Email}}"
+                }							
+			],
+            "outArguments": [],			
+			"url": "https://YOUR_URL/zapier/execute",
+            "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 10000
+        }
+    },
+    "configurationArguments": {
+    	"applicationExtensionKey": "872d820d-ac61-4b7f-aae1-cc6b73f1e3cc",
+        "defaults": { 
+            "method": "POST",
+            "format": "JSON" 
+        },             
+        "save": {
+        	"url": "https://YOUR_URL/zapier/save/",
+            "body": "",
+            "verb": "POST",
+            "useJwt": false
+        },
+        "publish": {
+        	"url": "https://YOUR_URL/zapier/publish/",
+            "verb": "POST",
+            "body": "",
+            "useJwt": false
+        },
+        "validate": {
+        	"url": "https://YOUR_URL/zapier/validate/",
+            "verb": "POST",
+            "body": "",
+            "useJwt": false            
+        }
+    },
+    "edit": {
+    	"url": "https://YOUR_URL/activity/zapier/",
+        "height": 400,
+        "width": 500
+    }
+}
